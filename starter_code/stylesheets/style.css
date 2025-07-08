@@ -60,7 +60,7 @@ nav .logo {
 nav .menu-desktop a:not(.btn) {
     /* display: none; */
     font-weight: 600;
-    color: var(--white)
+    color: var(--white);
 }
 
 nav .menu-mobile {
@@ -112,12 +112,6 @@ nav .menu-desktop ul.menu-desktop-cta {
         display: flex;
     }
 }
-
-nav button {
-    background: none;
-    border: none;
-}
-
 a, a:hover {
     text-decoration: none;
     color: var(--p-black)
@@ -186,22 +180,29 @@ h3 {
     color: var(--p-yellow)
 }
 
+
+
 button {
+    /* almost universal, to reset button styles */
+    background: none;
+    border: none;
     display: inline-flex;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+    /* you're likely to want to change these to look a specific way */
     height: 41px;
-    /* overflow: hidden; */
     padding: 3px 5px;
+
+    /* up to you and your project! */
     align-items: center;
     font-size: 1rem;
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 800;
     text-align: center;
-    border-radius: 2px;
-    border: 2px solid;
-    font-family: "Mulish", Arial, Helvetica, sans-serif;
     white-space: nowrap;
-}
+} 
 
 a.btn {
     display: inline-flex;
